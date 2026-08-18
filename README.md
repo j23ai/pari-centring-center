@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shuttring — परी सेंटरिंग सेंटर (Pari Centering Center)
 
-## Getting Started
+A one-page Next.js site for a centering/shuttering material rental
+business, styled after a reference landing-page design and populated
+with the business's real details from its visiting card.
 
-First, run the development server:
+## Getting started
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What to double-check before publishing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The visiting card photo was hard to OCR perfectly in a couple of
+spots. Everything lives in [`src/lib/site-data.ts`](src/lib/site-data.ts)
+— please verify against the physical card:
 
-## Learn More
+- **Rental note** (`noteHi`) — the exact wording of "हमारे यहाँ ... से
+  सेंटरिंग किराए पर दिया जाता है" was reconstructed from a small,
+  partly blurry line; confirm the exact phrase.
 
-To learn more about Next.js, take a look at the following resources:
+Confirmed directly (no longer OCR guesses): proprietor is Bhawani /
+Daroga Singh (भवानी / दरोगा सिंह); phone numbers and pin code
+(273151, Maharajganj, U.P.) were legible and used as printed; address
+is Village & Post – Barigaon Chauraha (बारीगांव चौराहा), Maharajganj
+(U.P.) – 273151.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Note: `phonePrimary` (call) and `whatsappNumber` (WhatsApp links) are
+intentionally different numbers — that's not a typo, it was set that
+way on request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Photos
 
-## Deploy on Vercel
+The hero, service-card and "Our Work" gallery photos are stock
+construction photography (Unsplash), used as placeholders since no
+real site photos were supplied — captions are generic ("Slab
+Centering Work" etc.), not claims about specific completed jobs. Swap
+`heroImage`, `services[].image` and `gallery[].image` in
+`src/lib/site-data.ts` for the shop's own photos of their material and
+site work whenever you have them — that will make the site far more
+convincing to local customers than stock photos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The "Flooring / Power Trowel Machine" rental item uses a photo cropped
+from an AI-generated marketing graphic — see
+[`public/images/README.md`](public/images/README.md) for the source
+and an important caveat: it shows a petrol-powered trowel, not the
+blue electric one from earlier photos of this shop's equipment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Structure
+
+- `src/lib/site-data.ts` — all business copy: name, contact, address,
+  services, equipment list, nav links, images.
+- `src/components/` — one file per section (`Navbar`, `Hero`, `About`,
+  `Services`, `WhyAndEquipment`, `Highlights`, `Gallery`, `CtaBanner`,
+  `Footer`) plus `icons.tsx` for the inline SVG icon set.
+- `src/app/page.tsx` — assembles the sections; `src/app/layout.tsx` —
+  fonts (Oswald for headings, Inter for body, Noto Sans Devanagari for
+  Hindi) and page metadata.
+
+Every phone number is a live `tel:`/`wa.me` link (WhatsApp opens with
+a prefilled Hindi message), so Call / WhatsApp buttons work as soon as
+you deploy.
+# pari-centring-center
