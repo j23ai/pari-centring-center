@@ -33,18 +33,19 @@ export default function Hero() {
                 {site.brandHi}
               </span>
               <span className="mt-2 block text-gold">Centering &amp; Shuttering</span>
-              <span className="block">Material On Rent</span>
+              <span className="block">Work By Our Own Workers</span>
             </h1>
           </Reveal>
           <Reveal delay={240}>
             <p className="mt-5 max-w-xl text-base text-slate-200 sm:text-lg">
               {site.taglineHi} — प्लाईवुड, एम.एस. प्लेट, एडजस्टेबल प्रॉप्स, स्कैफोल्डिंग व
-              जैक सहित सम्पूर्ण सेंटरिंग सामग्री उचित किराए पर।
+              जैक सहित सम्पूर्ण सामग्री व अनुभवी कारीगरों के साथ सेंटरिंग व शटरिंग का
+              पूरा कार्य आपके साइट पर।
             </p>
             <p className="mt-2 max-w-xl text-sm text-slate-400">
-              Complete centering &amp; shuttering material — plywood, MS plates,
-              adjustable props, scaffolding and jacks — available on rent at
-              fair rates.
+              Complete centering &amp; shuttering work — done at your site with
+              our own material (plywood, MS plates, adjustable props,
+              scaffolding and jacks) and skilled workers.
             </p>
           </Reveal>
 
@@ -54,10 +55,10 @@ export default function Hero() {
                 href="#services"
                 className="rounded-md bg-gold px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-navy transition hover:-translate-y-0.5 hover:brightness-95 active:translate-y-0"
               >
-                हमारी सामग्री देखें
+                हमारी सेवाएं देखें
               </a>
               <a
-                href={waHref(site.whatsappNumber, "Namaste, mujhe centering material rent par chahiye.")}
+                href={waHref(site.whatsappNumber, "Namaste, mujhe centering ka kaam karwana hai.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-md border border-white/30 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-white/10 active:translate-y-0"

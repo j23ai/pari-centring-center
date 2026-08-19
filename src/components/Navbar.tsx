@@ -59,7 +59,7 @@ export default function Navbar() {
             </span>
           </a>
           <a
-            href={waHref(site.whatsappNumber, "Namaste, mujhe centering material rent par chahiye.")}
+            href={waHref(site.whatsappNumber, "Namaste, mujhe centering ka kaam karwana hai.")}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-md bg-gold px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-navy transition hover:brightness-95"

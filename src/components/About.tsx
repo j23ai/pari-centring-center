@@ -17,16 +17,16 @@ export default function About() {
             {site.brandHi}
           </p>
           <p className="mt-3 leading-relaxed text-slate-600">
-            {site.taglineHi}। हम अपने ग्राहकों को स्लैब, कॉलम, बीम व फाउंडेशन के
-            काम के लिए प्लाईवुड, एम.एस. प्लेट, एडजस्टेबल प्रॉप्स, स्कैफोल्डिंग
-            तथा यू जैक / बेस जैक जैसी संपूर्ण सेंटरिंग सामग्री समय पर व वाजिब
-            किराए पर उपलब्ध कराते हैं।
+            {site.taglineHi}। हम अपने अनुभवी व कुशल कारीगरों के साथ स्लैब, कॉलम,
+            बीम व फाउंडेशन के लिए सेंटरिंग व शटरिंग का पूरा कार्य करते हैं —
+            प्लाईवुड, एम.एस. प्लेट, एडजस्टेबल प्रॉप्स, स्कैफोल्डिंग तथा यू जैक
+            / बेस जैक सहित सम्पूर्ण सामग्री हमारी ओर से लाई जाती है।
           </p>
           <p className="mt-3 text-sm leading-relaxed text-slate-500">
-            We supply complete centering &amp; shuttering material — plywood,
-            MS plates, adjustable props, scaffolding and U jacks / base jacks
-            — for slab, column, beam and foundation work, on rent at fair
-            rates and on time.
+            We carry out complete centering &amp; shuttering work — for slab,
+            column, beam and foundation — with our own experienced, skilled
+            workers and full material (plywood, MS plates, adjustable props,
+            scaffolding, U jacks / base jacks), on time and at fair rates.
           </p>
 
           <div className="mt-6 rounded-lg border border-gold/40 bg-gold/10 p-4">

@@ -6,7 +6,7 @@ Drop the shop's actual photos in this folder, then point to them from
 
 ## Flooring / Power Trowel Machine — currently no photo, on purpose
 
-Confirmed: this shop rents an **electric** trowel only (the blue unit
+Confirmed: this shop uses an **electric** trowel only (the blue unit
 from earlier photos), not a petrol/engine one. The photo previously
 here (`power-trowel-machine.jpg`, cropped from an AI-generated
 marketing graphic) showed a petrol machine, so it's been removed —

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Team from "@/components/Team";
 import Services from "@/components/Services";
 import WhyAndEquipment from "@/components/WhyAndEquipment";
 import Highlights from "@/components/Highlights";
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="pb-16 lg:pb-0">
         <Hero />
         <About />
+        <Team />
         <Services />
         <WhyAndEquipment />
         <Highlights />

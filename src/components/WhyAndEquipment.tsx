@@ -40,6 +40,12 @@ export default function WhyAndEquipment() {
             <h3 className="mt-2 font-heading text-2xl font-extrabold text-navy sm:text-3xl">
               Equipment &amp; Materials
             </h3>
+            <p className="mt-2 text-sm text-slate-500">
+              हर काम पर हमारी टीम अपने साथ यह सामग्री साथ लेकर आती है —{" "}
+              <span className="text-slate-400">
+                (equipment our team brings to every job, not for separate rent)
+              </span>
+            </p>
             <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
               {equipment.map((item) => {
                 const Icon = equipmentIcons[item.icon as keyof typeof equipmentIcons];

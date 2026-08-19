@@ -1,13 +1,20 @@
 // Central place for this business's real details.
 // Source: proprietor's visiting card. Please double-check the proprietor
-// name and the rental note below against the physical card — small
-// Devanagari print can be hard to read precisely from a photo.
+// name against the physical card — small Devanagari print can be hard to
+// read precisely from a photo.
+//
+// Business model: this is a centering/shuttering CONTRACTOR — we bring our
+// own material (plywood, MS plates, props, scaffolding, jacks) AND our own
+// skilled workers, and carry out the complete centering & shuttering work
+// at the customer's site. This is NOT a material-rental-only business, so
+// copy throughout the site should read as a service/work offering, not as
+// items available "on rent".
 
 export const site = {
   brandHi: "परी सेंटरिंग सेंटर",
   brandEn: "Pari Centering Center",
-  taglineHi: "सेंटरिंग व शटरिंग सामान किराए पर उपलब्ध",
-  taglineEn: "Centering & Shuttering Material on Rent",
+  taglineHi: "अपने कारीगरों व सामग्री के साथ सेंटरिंग व शटरिंग का पूरा कार्य",
+  taglineEn: "Complete Centering & Shuttering Work — Our Own Workers & Material",
 
   proprietorHi: "प्रो0 - भवानी / दरोगा सिंह",
   proprietorEn: "Prop. — Bhawani / Daroga Singh",
@@ -20,8 +27,10 @@ export const site = {
   addressHi: "ग्राम व पोस्ट - बारीगांव चौराहा, महराजगंज (उ.प्र.) - 273151",
   addressEn: "Village & Post — Barigaon Chauraha, Maharajganj (U.P.) - 273151",
 
-  noteHi: "नोट: हमारे यहाँ एक चेक से भी सेंटरिंग किराए पर दिया जाता है।",
-  noteEn: "Note: Centering material is given on rent here, even for a single set.",
+  noteHi:
+    "नोट: हम एक छोटे काम से लेकर बड़े प्रोजेक्ट तक, हर तरह के सेंटरिंग व शटरिंग कार्य के लिए अपने कारीगर व सामग्री साथ लेकर आते हैं।",
+  noteEn:
+    "Note: From a single small job to a large project, we bring our own workers and material for every kind of centering & shuttering work.",
 } as const;
 
 export const telHref = (num: string) => `tel:+91${num}`;
@@ -35,9 +44,8 @@ export const formatPhone = (num: string) =>
 export const navLinks = [
   { label: "होम", labelEn: "Home", href: "#home" },
   { label: "हमारे बारे में", labelEn: "About", href: "#about" },
-  { label: "किराए की सामग्री", labelEn: "Rental Items", href: "#services" },
-  { label: "उपकरण", labelEn: "Equipment", href: "#equipment" },
-  { label: "क्यों चुनें", labelEn: "Why Us", href: "#why" },
+  { label: "हमारी टीम", labelEn: "Our Team", href: "#team" },
+  { label: "हमारी सेवाएं", labelEn: "Our Services", href: "#services" },
   { label: "संपर्क करें", labelEn: "Contact", href: "#contact" },
 ];
 
@@ -57,8 +65,8 @@ export const services: ServiceItem[] = [
   {
     titleHi: "स्लैब सेंटरिंग",
     titleEn: "Slab Centering",
-    descHi: "हर तरह की RCC स्लैब के लिए सेंटरिंग सामान किराए पर।",
-    descEn: "Centering material on rent for all types of RCC slabs.",
+    descHi: "हर तरह की RCC स्लैब के लिए सेंटरिंग व शटरिंग का पूरा कार्य, अपने कारीगरों द्वारा।",
+    descEn: "Complete slab centering & shuttering work for all types of RCC slabs, done by our own workers.",
     image:
       "https://images.unsplash.com/photo-1694521787162-5373b598945c?auto=format&fit=crop&w=800&q=80",
     icon: "slab",
@@ -66,8 +74,8 @@ export const services: ServiceItem[] = [
   {
     titleHi: "कॉलम शटरिंग",
     titleEn: "Column Shuttering",
-    descHi: "सही आकार व मजबूती के साथ कॉलम शटरिंग सामग्री।",
-    descEn: "Column shuttering material with proper alignment & strength.",
+    descHi: "सही आकार व मजबूती के साथ कॉलम शटरिंग का कार्य हमारे कारीगरों द्वारा।",
+    descEn: "Column shuttering work with proper alignment & strength, done by our workers.",
     image:
       "https://images.unsplash.com/photo-1563166423-482a8c14b2d6?auto=format&fit=crop&w=800&q=80",
     icon: "column",
@@ -75,8 +83,8 @@ export const services: ServiceItem[] = [
   {
     titleHi: "बीम शटरिंग",
     titleEn: "Beam Shuttering",
-    descHi: "मजबूत सपोर्ट के साथ बीम शटरिंग सामान किराए पर उपलब्ध।",
-    descEn: "Beam shuttering material on rent with strong support.",
+    descHi: "मजबूत सपोर्ट के साथ बीम शटरिंग का कार्य हमारे अनुभवी कारीगरों द्वारा।",
+    descEn: "Beam shuttering work with strong support, done by our experienced workers.",
     image:
       "https://images.unsplash.com/photo-1575971637203-d6255d9947a9?auto=format&fit=crop&w=800&q=80",
     icon: "beam",
@@ -84,17 +92,17 @@ export const services: ServiceItem[] = [
   {
     titleHi: "फाउंडेशन शटरिंग",
     titleEn: "Foundation Shuttering",
-    descHi: "मजबूत नींव के लिए फाउंडेशन फॉर्मवर्क सामग्री।",
-    descEn: "Foundation formwork material for a solid, lasting base.",
+    descHi: "मजबूत व टिकाऊ नींव के लिए फाउंडेशन शटरिंग का पूरा कार्य।",
+    descEn: "Complete foundation shuttering work for a solid, lasting base.",
     image:
       "https://images.unsplash.com/photo-1712711649566-16c7cfcf341c?auto=format&fit=crop&w=800&q=80",
     icon: "foundation",
   },
   {
-    titleHi: "फ्लोरिंग मशीन (पावर ट्रॉवेल)",
-    titleEn: "Flooring / Power Trowel Machine",
-    descHi: "कंक्रीट स्लैब को चिकना व मजबूत फिनिश देने के लिए पावर ट्रॉवेल मशीन किराए पर उपलब्ध।",
-    descEn: "Power trowel machine on rent for a smooth, strong finish on concrete slabs.",
+    titleHi: "फ्लोरिंग फिनिशिंग कार्य (पावर ट्रॉवेल)",
+    titleEn: "Flooring Finishing Work (Power Trowel)",
+    descHi: "कंक्रीट स्लैब को चिकना व मजबूत फिनिश देने के लिए पावर ट्रॉवेल मशीन व कारीगर द्वारा फिनिशिंग कार्य।",
+    descEn: "Power trowel finishing work carried out by our operator for a smooth, strong concrete slab finish.",
     // No photo yet — every free-stock "power trowel" photo available is a
     // large gas-engine walk-behind unit, not the shop's actual electric
     // machine, so showing one would misrepresent the equipment. Falls back
@@ -102,6 +110,63 @@ export const services: ServiceItem[] = [
     // electric unit is available; then set this to "/images/<file>.jpg".
     image: null,
     icon: "trowel",
+  },
+];
+
+type TeamMember = {
+  roleHi: string;
+  roleEn: string;
+  // Individual names are optional — most cards below are role-only
+  // placeholders (see note) and shouldn't invent a person.
+  nameHi: string | null;
+  nameEn: string | null;
+  descHi: string;
+  descEn: string;
+  // Marks the featured/lead card (styled with the gold accent).
+  lead?: boolean;
+};
+
+// PLACEHOLDER team roster. Only the proprietor entry is real data (reused
+// from `site` above, already shown in the About section). The other cards
+// are structural placeholders describing a role, not a specific person —
+// swap in real names once available. No photo field on purpose: Team.tsx
+// renders an initials avatar instead of a stock/AI photo, so nothing here
+// misrepresents a real person, same rule as the equipment photos (see
+// public/images/README.md). Add a `photo: "/images/team/<file>.jpg"`
+// field + wire it into Team.tsx once real photos exist.
+export const team: TeamMember[] = [
+  {
+    roleHi: "प्रोपराइटर",
+    roleEn: "Proprietor",
+    nameHi: "भवानी / दरोगा सिंह",
+    nameEn: "Bhawani / Daroga Singh",
+    descHi: "पूरे कार्य की देखरेख व ग्राहकों से सीधा संपर्क।",
+    descEn: "Oversees every job and is the direct point of contact for customers.",
+    lead: true,
+  },
+  {
+    roleHi: "साइट सुपरवाइज़र",
+    roleEn: "Site Supervisor",
+    nameHi: null,
+    nameEn: null,
+    descHi: "साइट पर कार्य की गुणवत्ता व सुरक्षा की निगरानी करते हैं।",
+    descEn: "Supervises work quality & safety on site.",
+  },
+  {
+    roleHi: "सीनियर कारीगर",
+    roleEn: "Senior Karigar",
+    nameHi: null,
+    nameEn: null,
+    descHi: "स्लैब, कॉलम व बीम शटरिंग में वर्षों का अनुभव रखते हैं।",
+    descEn: "Years of hands-on experience in slab, column & beam shuttering.",
+  },
+  {
+    roleHi: "कुशल कारीगर टीम",
+    roleEn: "Skilled Karigar Team",
+    nameHi: null,
+    nameEn: null,
+    descHi: "हर प्रोजेक्ट के साथ जाने वाली प्रशिक्षित कारीगरों की टीम।",
+    descEn: "A trained crew that travels with every project.",
   },
 ];
 
@@ -118,14 +183,14 @@ export const whyChooseUs = [
   { hi: "अच्छी क्वालिटी का सामान", en: "Good quality material" },
   { hi: "मजबूत व सुरक्षित सेंटरिंग", en: "Strong & safe centering" },
   { hi: "समय पर डिलीवरी", en: "On-time delivery" },
-  { hi: "वाजिब किराया", en: "Affordable rent" },
+  { hi: "वाजिब मूल्य पर कार्य", en: "Affordable rates" },
   { hi: "ग्राहकों की पूरी संतुष्टि", en: "100% customer satisfaction" },
 ];
 
 export const highlights = [
   { hi: "क्वालिटी मटेरियल", en: "Quality Material", icon: "shield" },
   { hi: "समय पर डिलीवरी", en: "On-Time Delivery", icon: "clock" },
-  { hi: "वाजिब किराया", en: "Affordable Rent", icon: "tag" },
+  { hi: "वाजिब मूल्य", en: "Affordable Rates", icon: "tag" },
   { hi: "स्थानीय भरोसा", en: "Locally Trusted", icon: "users" },
 ];
 

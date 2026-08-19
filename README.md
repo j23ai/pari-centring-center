@@ -1,8 +1,11 @@
 # Shuttring — परी सेंटरिंग सेंटर (Pari Centering Center)
 
-A one-page Next.js site for a centering/shuttering material rental
-business, styled after a reference landing-page design and populated
-with the business's real details from its visiting card.
+A one-page Next.js site for a centering/shuttering contractor — they
+bring their own material (plywood, MS plates, props, scaffolding,
+jacks) **and** their own skilled workers, and carry out the complete
+centering & shuttering work at the customer's site. It is styled
+after a reference landing-page design and populated with the
+business's real details from its visiting card.
 
 ## Getting started
 
@@ -14,19 +17,21 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## What to double-check before publishing
 
-The visiting card photo was hard to OCR perfectly in a couple of
-spots. Everything lives in [`src/lib/site-data.ts`](src/lib/site-data.ts)
-— please verify against the physical card:
-
-- **Rental note** (`noteHi`) — the exact wording of "हमारे यहाँ ... से
-  सेंटरिंग किराए पर दिया जाता है" was reconstructed from a small,
-  partly blurry line; confirm the exact phrase.
+Everything lives in [`src/lib/site-data.ts`](src/lib/site-data.ts) —
+please verify against the physical card:
 
 Confirmed directly (no longer OCR guesses): proprietor is Bhawani /
 Daroga Singh (भवानी / दरोगा सिंह); phone numbers and pin code
 (273151, Maharajganj, U.P.) were legible and used as printed; address
 is Village & Post – Barigaon Chauraha (बारीगांव चौराहा), Maharajganj
 (U.P.) – 273151.
+
+The `taglineHi`/`taglineEn` and `noteHi`/`noteEn` fields were rewritten
+(2026-08-19) to describe the actual business model — a centering/
+shuttering **contractor** who brings their own workers and material
+to do the complete job, not a material-rental business. If the
+proprietor wants different wording for how that's phrased in Hindi,
+update those fields.
 
 Note: `phonePrimary` (call) and `whatsappNumber` (WhatsApp links) are
 intentionally different numbers — that's not a typo, it was set that

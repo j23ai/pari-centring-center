@@ -9,14 +9,14 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="font-devanagari text-sm font-bold text-gold-dark">
-            हमारी किराए की सामग्री
+            हमारी सेवाएं
           </p>
           <h2 className="mt-2 font-heading text-3xl font-extrabold text-navy sm:text-4xl">
-            Rental Items
+            Our Services
           </h2>
           <p className="mt-3 text-slate-600">
             स्लैब, कॉलम, बीम और फाउंडेशन — हर तरह के RCC काम के लिए सेंटरिंग व
-            शटरिंग सामग्री एक ही जगह पर।
+            शटरिंग का पूरा कार्य, अपने कारीगरों व सामग्री के साथ।
           </p>
         </Reveal>
 

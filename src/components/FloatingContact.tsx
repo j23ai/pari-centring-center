@@ -12,7 +12,7 @@ export default function FloatingContact() {
         Call Now
       </a>
       <a
-        href={waHref(site.whatsappNumber, "Namaste, mujhe centering material rent par chahiye.")}
+        href={waHref(site.whatsappNumber, "Namaste, mujhe centering ka kaam karwana hai.")}
         target="_blank"
         rel="noopener noreferrer"
         className="animate-pulse-ring flex flex-1 items-center justify-center gap-2 bg-gold py-3.5 text-sm font-bold text-navy transition active:brightness-95"

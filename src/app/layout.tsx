@@ -20,9 +20,9 @@ const notoDevanagari = Noto_Sans_Devanagari({
 });
 
 export const metadata: Metadata = {
-  title: "परी सेंटरिंग सेंटर | Pari Centering Center — Centering & Shuttering Material On Rent",
+  title: "परी सेंटरिंग सेंटर | Pari Centering Center — Centering & Shuttering Work by Our Own Workers",
   description:
-    "Pari Centering Center (परी सेंटरिंग सेंटर) — centering व शटरिंग सामग्री किराए पर। Plywood, MS plates, adjustable props, scaffolding & jacks on rent in Maharajganj, U.P. Call/WhatsApp +91 9076560189.",
+    "Pari Centering Center (परी सेंटरिंग सेंटर) — अपने कारीगरों व सामग्री के साथ centering व शटरिंग का पूरा कार्य। Slab, column, beam & foundation centering-shuttering work with our own plywood, MS plates, props, scaffolding & jacks in Maharajganj, U.P. Call/WhatsApp +91 9076560189.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

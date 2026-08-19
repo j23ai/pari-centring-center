@@ -66,7 +66,7 @@ export default function ContactCard() {
             </p>
           </div>
           <a
-            href={waHref(site.whatsappNumber, "Namaste, mujhe centering material rent par chahiye.")}
+            href={waHref(site.whatsappNumber, "Namaste, mujhe centering ka kaam karwana hai.")}
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 text-right"

@@ -59,7 +59,7 @@ export default function Footer() {
             </li>
           </ul>
           <a
-            href={waHref(site.whatsappNumber, "Namaste, mujhe centering material rent par chahiye.")}
+            href={waHref(site.whatsappNumber, "Namaste, mujhe centering ka kaam karwana hai.")}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-flex items-center gap-2 rounded-md bg-gold px-4 py-2.5 text-xs font-bold uppercase tracking-wide text-navy transition hover:brightness-95"
